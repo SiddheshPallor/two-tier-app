@@ -1,37 +1,44 @@
-Two-Tier Flask Web Application (Docker, MySQL, Jenkins, AWS)
+🌐 Two-Tier Flask Web Application
 
-This project is a cloud-based two-tier web application built using Flask for the application tier and MySQL for the database tier. Both services are containerized using Docker and orchestrated using Docker Compose. CI/CD automation is handled through Jenkins, and the complete system is deployed on an AWS EC2 instance.
+A cloud-ready Flask + MySQL dashboard, fully containerized with Docker, automated using Jenkins, and deployed on AWS EC2.
 
-Features
+🚀 What This Project Does
 
-Flask dashboard for displaying database records
+Runs a Flask dashboard UI
 
-MySQL as backend database
+Stores user records inside a MySQL database
 
-Containerized application and database using Docker
+Uses Docker Compose to orchestrate multiple containers
 
-Jenkins-based CI/CD automation
+Automates build and deployment via Jenkins
 
-Deployment on AWS EC2 with persistent data storage
+Hosts the complete app on AWS EC2 for 24×7 access
 
-Architecture
+🏗️ How It Works
+Browser → Flask Web App → MySQL Database
+                 (Both inside Docker Containers)
+                   Hosted on AWS EC2
 
-Frontend requests → Flask application
+⚙️ Technology Used
 
-Flask queries → MySQL database
+Flask (Application Layer)
 
-Both containers hosted and orchestrated on AWS EC2
+MySQL (Database Layer)
 
-Deployment Summary
+Docker & Docker Compose (Containerization)
 
-Local development and testing completed using Flask and MySQL
+Jenkins (CI/CD Automation)
 
-Application and database packaged as Docker containers
+AWS EC2 (Cloud Hosting)
 
-Jenkins pulls from GitHub and redeploys automatically
+Git + GitHub (Version Control)
 
-Final deployment runs on a cloud server (EC2) with 24×7 availability
+🌩️ Cloud Deployment Highlights
 
-Status
+Containers run in detached background mode
 
-The application is fully functional, cloud-hosted, database-driven, and CI-enabled.
+MySQL volume preserves data across restarts
+
+Jenkins redeploys automatically after updates
+
+EC2 ensures continuous availability even when offline
